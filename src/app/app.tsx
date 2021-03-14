@@ -1,12 +1,22 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import logo from 'assets/images/logo.svg'
-import Headers from './header';
+import './app.scss'
+import Headers from './header'
+
+import Test from '../pages/test'
+import Import from '../pages/import'
 
 function App() {
     return (
         <Router>
             <Headers></Headers>
             <Switch>
+                <Route path="/test">
+                    <Test></Test>
+                </Route>
+                <Route path="/import">
+                    <Import />
+                </Route>
                 <Route path="/">
                     <div className="App">
                         <header className="App-header">
