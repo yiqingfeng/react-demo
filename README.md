@@ -39,6 +39,12 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+
+eject 操作执行后，会在项目根目录下出现 config 文件夹，执行后不可撤销。
+
+如果只是执行一些简单的拓展，可以不进行 eject，而是使用 react-app-rewired 包替换 react-script
+
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
