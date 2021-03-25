@@ -5,6 +5,7 @@ import Headers from './header'
 
 import Test from '../pages/test'
 import Import from '../pages/import'
+import ContextPage from '../pages/context'
 
 function App() {
     return (
@@ -16,6 +17,9 @@ function App() {
                 </Route>
                 <Route path="/import">
                     <Import />
+                </Route>
+                <Route path="/context">
+                    <ContextPage />
                 </Route>
                 <Route path="/">
                     <div className="App">

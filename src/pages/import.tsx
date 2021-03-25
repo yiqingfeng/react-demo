@@ -3,7 +3,7 @@
  */
 import React, { Suspense } from 'react'
 
-const Demo = React.lazy(() => import('../components/demo'))
+const Demo = React.lazy(() => import('components/demo'))
 
 function DynamicImport() {
     return (
