@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.13.5",
+    "@babel/plugin-proposal-optional-chaining": "^7.13.8",
     "customize-cra": "^1.0.0",
     "node-sass": "^5.0.0",
     "react-app-rewired": "^2.1.8"

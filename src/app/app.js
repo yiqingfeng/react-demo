@@ -5,6 +5,11 @@ import NoFound from './nofound';
 import Demo from '@/pages/demo';
 import logo from '@/assets/images/logo.svg';
 import './app.scss';
+import utils from '../utils/index';
+
+// 动态加载页面
+const pages = utils.importAll(require.context('../pages/', false, /\.js$/));
+console.log(pages);
 
 function Home(props) {
     return (

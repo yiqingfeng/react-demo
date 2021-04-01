@@ -1,15 +1,21 @@
+const path = require('path');
 const {
     override,
     addWebpackAlias,
     addDecoratorsLegacy,
+    useBabelRc,
 } = require('customize-cra');
-const path = require('path');
+
+function resolvePath(nPath) {
+    return path.resolve(__dirname, nPath);
+}
 
 module.exports = override(
+    useBabelRc(),
     addWebpackAlias({
-        '@': path.resolve(__dirname, 'src'),
-        assets: path.resolve(__dirname, './src/assets'),
-        pages: path.resolve(__dirname, './src/pages')
+        '@': resolvePath('src'),
+        assets: resolvePath('./src/assets'),
+        pages: resolvePath('./src/pages')
     }),
-    addDecoratorsLegacy()
+    addDecoratorsLegacy(),
 );
